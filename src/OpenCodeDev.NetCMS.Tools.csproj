@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>OpenCodeDev.NetCMS.Tools</PackageId>
+    <Company>OpenCodeDev</Company>
+    <Authors>OpenCodeDev</Authors>
+    <Description>E-Commerce Tools for NetCMS</Description>
+    <Copyright>OpenCodeDev © 2024</Copyright>
+    <PackageProjectUrl>https://github.com/OpenCodeDev/OpenCodeDev.NetCMS.Tools</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OpenCodeDev/OpenCodeDev.NetCMS.Tools</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageTags>NetCMS, E-Commerce, Tools, OpenCodeDev</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <Version>1.0.0-alpha.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icon.psd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

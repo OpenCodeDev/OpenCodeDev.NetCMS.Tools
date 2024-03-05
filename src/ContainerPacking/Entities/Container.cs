@@ -26,13 +26,14 @@ namespace OpenCodeDev.NetCMS.Tools.ContainerPacking.Entities
 		/// <param name="length">The container length.</param>
 		/// <param name="width">The container width.</param>
 		/// <param name="height">The container height.</param>
-		public Container(object id, decimal length, decimal width, decimal height)
-		{
-			this.Id = id;
-			this.Length = length;
-			this.Width = width;
-			this.Height = height;
-			this.Volume = length * width * height;
+		public Container(object id, decimal length, decimal width, decimal height, decimal maxWeight)
+        {
+            Id = id;
+			Length = length;
+			Width = width;
+			Height = height;
+			Volume = length * width * height;
+			MaxWeight = maxWeight;
 		}
 
 		#endregion Constructors
@@ -70,13 +71,21 @@ namespace OpenCodeDev.NetCMS.Tools.ContainerPacking.Entities
 		/// </value>
 		public decimal Height { get; set; }
 
-		/// <summary>
-		/// Gets or sets the volume of the container.
-		/// </summary>
-		/// <value>
-		/// The volume of the container.
-		/// </value>
-		public decimal Volume
+        /// <summary>
+        /// Gets or sets the container max weight.
+        /// </summary>
+        /// <value>
+        /// The container max weight.
+        /// </value>
+        public decimal MaxWeight { get; set; }
+
+        /// <summary>
+        /// Gets or sets the volume of the container.
+        /// </summary>
+        /// <value>
+        /// The volume of the container.
+        /// </value>
+        public decimal Volume
 		{
 			get
 			{
