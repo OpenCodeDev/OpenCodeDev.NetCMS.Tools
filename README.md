@@ -11,8 +11,7 @@ The container packing is a e-commerce tool using EB-AFIT packing algorithm to fi
 - Thanks to Erhan Baltacıoğlu for the algorithm.
 - Thanks to CromulentBisgetti.ContainerPacking, we directly copied the code and adapted it to our need.
 
-![Container packing visualization](https://github.com/davidmchapman/3DContainerPacking/blob/master/images/packing-1.gif?raw=true "Container Packing")
-
+![Container packing visualization](https://github.com/OpenCodeDev/OpenCodeDev.NetCMS.Tools/blob/main/assets/packing.gif?raw=true)
 
 ### Usage
 <hr/>
